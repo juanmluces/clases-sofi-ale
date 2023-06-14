@@ -1,0 +1,82 @@
+body {
+
+    background-color: cadetblue ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.Title {
+    text-align: center;
+    margin-bottom: 1 rem;
+}
+
+.logo-html {
+    width:150px;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.full-width-paragraphs {
+    margin: auto;
+    background-color: darkkhaki;
+    padding: 1rem 0;
+}
+
+.full-width-paragraphs h3 {
+    text-align: center;
+}
+
+.three-columns-paragraphs {
+    margin: auto;
+    background-color: chocolate;
+
+}
+.three-columns-paragraphs .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.three-columns-paragraphs h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.three-columns-paragraphs p {
+    width: 30%;
+}
+
+.links-list {
+    padding: 1rem 0;
+    background-color: azure;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+li a {
+    text-decoration: none;
+}
+.link-image {
+    display: block;
+    width: 8rem;
+}
+
+
+
+
+

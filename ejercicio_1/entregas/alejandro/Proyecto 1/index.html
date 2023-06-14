@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>new project</title>
+    <link rel="icon" href="./image/html5 .ico.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: cadetblue;
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .titles{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .html-logo{
+            width: 150px;
+        }
+
+        .container{
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .full-width-paragraphs{
+            background-color: darkkhaki;
+            margin: auto;
+            padding: 1rem 0;
+        }
+
+        .full-width-paragraphs h3{
+            text-align: center;
+        }
+
+        .three-columns-paragraphs{
+            background-color: chocolate;
+            margin: auto;
+        }
+
+        .three-columns-paragraphs .container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .three-columns-paragraphs h3{
+            text-align:center ;
+            width: 100%;
+        }
+
+        .three-columns-paragraphs p{
+            width: 30%;
+        }
+
+        .links-list{
+            padding: 1rem 0;
+            background-color: azure;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            font-size: 2rem;
+            justify-content: space-between;
+        }
+
+        li{
+            margin-left: 1rem;
+        }
+
+        li a{
+            text-decoration: none;
+        }
+
+        .link-image{
+            display: block;
+            width: 8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="titles">
+        <h1>Ejercicio HTML Básico</h1>
+        <h2>Refuerzo de etiquetas y estilos</h2>
+        <img class="html-logo" src="./image/html5 .ico.png" alt="HTML5 logotipo" width="150px" height="150">
+    </div> 
+    
+    <div class="full-width-paragraphs">
+    <div class="container">
+    <h3>Estos son los parrafos que existen al ancho del contenedor</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid facere voluptatum eum dolores obcaecati earum laborum, est ipsum dignissimos consequuntur praesentium laboriosam dicta tempore pariatur quaerat nesciunt aspernatur. Dolores?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis quaerat, accusantium debitis consectetur, at ratione obcaecati deserunt eligendi reiciendis quia nostrum aspernatur. Repellendus distinctio minima dolorum repudiandae deleniti rem.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorem facilis ab sequi excepturi inventore accusamus velit debitis ratione vel nobis vitae eveniet a rem, quas quod quibusdam sapiente ad.</p>
+    </div>
+    </div>
+    
+    <div class="three-columns-paragraphs">
+    <div class="container">
+        <h3>estos son parrafos en tres columnas</h3>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid facere voluptatum eum dolores obcaecati earum laborum, est ipsum dignissimos consequuntur praesentium laboriosam dicta tempore pariatur quaerat nesciunt aspernatur. Dolores?</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis quaerat, accusantium debitis consectetur, at ratione obcaecati deserunt eligendi reiciendis quia nostrum aspernatur. Repellendus distinctio minima dolorum repudiandae deleniti rem.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorem facilis ab sequi excepturi inventore accusamus velit debitis ratione vel nobis vitae eveniet a rem, quas quod quibusdam sapiente ad.
+
+        </p>
+    </div>
+    </div>
+
+<div class="links-list">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="https://www.google.com/" target="_blank">¡Vamos a google!
+
+                </a>
+            </li>
+            <li>
+                <a title="www.google.com" href="http://www.google.com" target="_blank">
+                    <img class="link-image" src="./assets/googlelogo_color_92x30dp.png" alt="logo google">
+                </a>
+            </li>
+      
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

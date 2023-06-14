@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio HTML Básico</title>
+  <style>
+    /* font-family define la tipografía a usar, se pueden utilizar varios valores para tener tipografías fallback por si no encuentra el primero (Arial) busca el siguiente (Helvetica) y si no lo encuentra busca cualquier tipografía que sea san-serif */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: cadetblue;
+      margin: 0;
+    }
+
+    .titles {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .html-logo {
+      width: 150px;
+    }
+
+    /* La clase container la reutilizamos en varios componentes para darle a todos un ancho máximo de 800px y centrar su contenido con margin auto, pero también se utiliza en combinación con otros selectores mas adelante para darle estilos específicos en otros casos, por ejemplo en .three-columns-paragraphs .container */
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .full-width-paragraphs {
+      margin: auto;
+      background-color: darkkhaki;
+      padding: 1rem 0;
+    }
+
+    .full-width-paragraphs h3 {
+      text-align: center;
+    }
+
+    .three-columns-paragraphs {
+      margin: auto;
+      background-color: chocolate;
+    }
+
+    /* Aquí queremos seleccionar al elemento de la clase .container que es HIJO de otro elemento de la clase .three-columns-paragraphs (línea 85):
+    display: flex sirve para poder manejar la posición y tamaño de sus hijos en principio los coloca a todos en una sola linea.
+    flex-wrap: wrap sirve darle un tamaño específico a cada uno de sus hijos, esto lo necesitamos para decirle que el subtítulo h3 ocupe el 100% del ancho posible (así lo mantenemos en una linea sólo y que no se le coloquen al lado los párrafos) y a los párrafos le decimos que ocupen un 30% cada uno, asegurándonos de que tendremos siempre 3 columnas.
+    justify-content: space-between lo que hace es meter el espacio sobrante entre los elementos, por ejemplo el espacio que sobre entre los p los mete "in between" cada elemento de una manera equidistante (si cada <p> ocupa 30% y son 3 <p> significa que ocupan en total un 90%, ese 10% sobrante se usa para separar los elementos)  */
+    .three-columns-paragraphs .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .three-columns-paragraphs h3 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .three-columns-paragraphs p {
+      width: 30%;
+    }
+
+    .links-list{
+      padding: 1rem 0;
+      background-color: azure;
+    }
+    
+    /* En muchas etiquetas vienen estilos por defecto que a veces nos conviene quitar, por ejemplo el list-style: none, padding: 0, margin: 0 */
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      font-size: 2rem;
+      justify-content: space-between;
+    }
+
+
+    li{
+      margin-left: 1rem;
+
+    }
+
+    li a{
+      text-decoration: none;
+    }
+
+    .link-image{
+      display: block;
+      width:8rem;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="titles">
+    <h1>Ejercicio HTML Básico</h1>
+    <h2>Refuerzo de etiquetas y estilos</h2>
+    <img class="html-logo"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+      alt="" srcset="">
+  </div>
+  <div class="full-width-paragraphs">
+    <div class="container">
+      <h3>Estos son párrafos que se extienden al ancho de su contenedor</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid facere voluptatum eum dolores obcaecati
+        earum laborum, est ipsum dignissimos consequuntur praesentium laboriosam dicta tempore pariatur quaerat nesciunt
+        aspernatur. Dolores?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis quaerat, accusantium debitis
+        consectetur, at ratione obcaecati deserunt eligendi reiciendis quia nostrum aspernatur. Repellendus distinctio
+        minima dolorum repudiandae deleniti rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorem facilis ab sequi excepturi
+        inventore accusamus velit debitis ratione vel nobis vitae eveniet a rem, quas quod quibusdam sapiente ad.</p>
+    </div>
+  </div>
+  <div class="three-columns-paragraphs">
+    <div class="container">
+      <h3>Estos son párrafos que se extienden al ancho de su contenedor</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid facere voluptatum eum dolores obcaecati
+        earum laborum, est ipsum dignissimos consequuntur praesentium laboriosam dicta tempore pariatur quaerat nesciunt
+        aspernatur. Dolores?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis quaerat, accusantium debitis
+        consectetur, at ratione obcaecati deserunt eligendi reiciendis quia nostrum aspernatur. Repellendus distinctio
+        minima dolorum repudiandae deleniti rem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorem facilis ab sequi excepturi
+        inventore
+        accusamus velit debitis ratione vel nobis vitae eveniet a rem, quas quod quibusdam sapiente ad.</p>
+    </div>
+  </div>
+  <div class="links-list">
+    <div class="container">
+      <ul>
+        <li><a href="http://www.google.com" target="_blank">¡vamos a google!</a></li>
+        <li><a title="www.google.com" href="http://www.google.com" target="_blank"><img class="link-image" src="
+        https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+
+</html>

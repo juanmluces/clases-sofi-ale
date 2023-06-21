@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 1rem;
+    list-style-type: none;
+    background-color: darkslateblue;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.full-height {
+    min-height: 94vh;
+}
+
+.half-height {
+    min-height: 50vh;
+}
+
+.home {
+    background-color: dimgray;
+    background-image: url(https://images.pexels.com/photos/50695/rain-after-the-rain-a-drop-of-drop-of-rain-50695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.title {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+.title h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.about {
+    background-color: #27869a;
+    padding-top: 3rem;
+    color: white;
+    min-height: 50vh;
+
+
+}
+.container {
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img {
+    width: 25%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    display: block;
+    height: auto;
+}
+
+.about p {
+    width: 70%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.contact {
+    background-color: #1f5260;
+    padding-top: 3rem;
+    color: white;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact .form-container {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    background: darkslateblue;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    
+}
+
+.info {
+    margin-top: 1rem;
+}
+.contact form {
+    display: block;
+    margin-top: 0em;
+}
+.contact form input {
+    width: 100%;
+    height: 2rem;
+}
+.contact form select {
+    width: 100%;
+    height: 2rem;
+}

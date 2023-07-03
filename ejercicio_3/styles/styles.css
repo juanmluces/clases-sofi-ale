@@ -1,0 +1,120 @@
+@font-face {
+  font-family: sayan-sans;
+  src: url('../assets/Saiyan-Sans.ttf');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+
+.sayan-text {
+  font-family: sayan-sans;
+  letter-spacing: 0.1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #e76a24;
+  color: #e7e5e8;
+  padding: 1rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav ul li:hover {
+  color: #1c4595;
+}
+
+header li .active {
+  color: #1c4595;
+  font-weight: 800;
+
+}
+
+section.hero {
+  height: 90vh;
+  background-color: #e7e5e8;
+  background-image: url('../assets/hero-goku.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.hero2{
+  background-image: url('../assets/hero-goku2.jpg');
+}
+section.hero3{
+  background-image: url('../assets/hero-goku3.jpg');
+}
+
+section.hero .titles {
+  display: flex;
+  flex-direction: column;
+}
+
+section.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #e76a24;
+}
+
+section.articles article {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e5e8;
+  width: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+section.articles article .paragraphs p{
+  margin: 1rem;
+  color: #1c4595;
+}
+
+footer{
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c4595;
+  color: #e7e5e8;
+}
+
+footer img{
+  width: 150px;
+
+}
+
+footer ul{
+  list-style-type: none;
+}
+
+
